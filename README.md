@@ -1,11 +1,43 @@
-# thirtytwo-bit-systems.github.io
+<img src="https://www.thirtytwobit.systems/assets/logo/32bs-appicon-leads.svg" width="88" alt="Thirtytwo Bit Systems">
 
-## About Us
-Welcome to ThirtyTwo Bit Systems. We excel in delivering comprehensive solutions for embedded systems, specializing in both hardware and software development. Our core competencies include:
+# thirtytwobit.systems
 
-- **Embedded Systems Development**: Crafting cutting-edge hardware and software solutions tailored for high performance and reliability.
-- **Software Development**: Designing and implementing robust backend systems and sophisticated applications to meet diverse business needs.
-- **App Development**: Creating high-performance mobile applications that enhance user experience and drive business growth.
+The Thirtytwo Bit Systems website. Static HTML and CSS, no build step, served
+by GitHub Pages at **[www.thirtytwobit.systems](https://www.thirtytwobit.systems)**.
 
-  
-At ThirtyTwo Bit Systems, we are committed to innovation, quality, and excellence in every project we undertake.
+## Layout
+
+```
+index.html          the whole site, one page
+styles.css          all of its styling
+assets/logo/        brand kit - the canonical copy (see its own README)
+CNAME               custom domain
+```
+
+## Working on it
+
+There is nothing to install and nothing to compile. Serve the folder and open it:
+
+```sh
+python3 -m http.server 8000
+```
+
+Google Fonts is the only external request the page makes; everything else is
+local.
+
+## Brand assets
+
+`assets/logo/` is the single home for the logo in every variant - mark, inverse,
+mono, small, app icons and lockups, plus PNG renders and favicons.
+[`assets/logo/README.md`](assets/logo/README.md) says which file to use when.
+Do not copy these elsewhere; link to them.
+
+## Deploying
+
+Merging to `main` publishes. GitHub Pages rebuilds within a minute or so, and
+the CDN holds the old page for up to ten minutes after that.
+
+## Contact
+
+**hello@thirtytwobit.systems** · +91 8050728498
+Bengaluru, India
